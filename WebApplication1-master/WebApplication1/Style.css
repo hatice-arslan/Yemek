@@ -1,0 +1,21 @@
+﻿.Buton {
+    height: 40px;
+    width: 120px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 18pt;
+}
+
+.lblekran {
+    background-color: #4cff00;
+    font-size: 12pt;
+    color: blue;
+}
+
+.Div {
+    background-color: orangered;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

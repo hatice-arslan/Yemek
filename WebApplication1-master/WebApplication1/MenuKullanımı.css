@@ -1,0 +1,109 @@
+﻿a:link{
+    text-decoration:none;
+    font-size:14px;
+    font-family:'Segoe UI';
+    font-family:normal;
+}
+a:hover{
+    font-size:18px;
+    color:yellow;
+}
+
+/* Genel vücut ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Formu çevreleyen kapsayıcı */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Etiketler için stil */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input (text box) stil */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+    input[type="text"]:focus {
+        border-color: #4CAF50;
+        background-color: #e8f5e9;
+        outline: none;
+    }
+
+/* Button (düğme) stil */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Button aktifken stil */
+    button:active {
+        background-color: #388e3c;
+    }
+
+    /* Button disabled durumu */
+    button:disabled {
+        background-color: #c8e6c9;
+        cursor: not-allowed;
+    }
+
+    /* Focus efekti ve genel form düzeni */
+    input[type="text"]:focus, button:focus {
+        outline: none;
+    }
+
+input[type="text"], button {
+    box-sizing: border-box;
+}
+
+/* Responsive tasarım (küçük ekranlar için) */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+    }
+}

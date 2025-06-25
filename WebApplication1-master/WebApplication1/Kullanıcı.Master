@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanıcı.master.cs" Inherits="WebApplication1.Kullanıcı" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="MenuKullanımı.css" rel="stylesheet" />   
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 28px;
+        }
+        .auto-style2 {
+            height: 11px;
+            font-weight:bold;
+            
+        }
+        .auto-style3 {
+            font-size: large;
+        }
+        .auto-style4 {
+            height: 219px;
+            float: left;
+            width: 199px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; text-align: left; background-color: #66CCFF;" margin-left:"300px;">         
+            <asp:Image ID="Image1" runat="server" Height="145px" Width="695px" />
+        </div>
+
+
+ 
+     
+
+             
+
+         <div style="height: 20px; width: 700px;   " margin-left:"300px;">  </div>
+         <div style="height: 300px; width: 700px;" margin-left:"300px;">  
+           <div style="background-color: #66CCFF;" class="auto-style4"  > 
+               <div class="auto-style3">    
+               <span class="auto-style3">MENÜLER</span><br class="auto-style3" />
+               <br />
+                   </div>
+               <asp:DataList ID="DataList1" runat="server" Height="140px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Width="197px">
+                   <ItemTemplate>
+                       <div style="border: thin solid #CCCCCC">
+                           <a href="KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>"><strong>
+                           <asp:Label ID="Label1" runat="server" CssClass="auto-style3" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                           </strong></a> 
+                           &nbsp;(<asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                           )</div>
+                   </ItemTemplate>
+               </asp:DataList>
+             </div>
+           <div style="height: auto; float:left; width: 400px; background-color: #66CCFF;  margin-left:100px; "> 
+                     <asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+           </div>
+         </div>
+             
+        
+               
+    </form>
+         
+           
+     
+       
+    </body>
+</html>
